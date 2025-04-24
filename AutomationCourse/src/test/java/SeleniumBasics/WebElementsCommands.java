@@ -20,6 +20,10 @@ public class WebElementsCommands extends Base {
 		WebElement msgbox=driver.findElement(By.xpath("//input[@id='single-input-field']"));
 		msgbox.sendKeys("hello");
 		WebElement showmsg=driver.findElement(By.xpath("//button[@id=\"button-one\"]"));
+		
+		//System.out.println(showmsg.isDisplayed());
+		System.out.println(showmsg.isEnabled());
+		
 		showmsg.click();
 		WebElement yourmsg=driver.findElement(By.xpath("//div[@id=\"message-one\"]"));
 		System.out.println(yourmsg.getText());
