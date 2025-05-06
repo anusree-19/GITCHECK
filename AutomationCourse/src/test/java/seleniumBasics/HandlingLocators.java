@@ -1,4 +1,4 @@
-package SeleniumBasics;
+package seleniumBasics;
 
 import javax.xml.xpath.XPath;
 

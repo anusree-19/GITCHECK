@@ -1,4 +1,4 @@
-package SeleniumBasics;
+package seleniumBasics;
 
 import java.sql.Driver;
 
@@ -10,10 +10,13 @@ public class HandlingTables extends Base{
 	public void handlingTables()
 	{
 		driver.navigate().to("https://money.rediff.com/indices/nse");
-		
-		//table[@id='dataTable']
+		// to get a entire table data
 		WebElement fulltable=driver.findElement(By.xpath("//table[@id='dataTable']"));
 		System.out.println(fulltable.getText());
+		//to select particular row
+		WebElement tablerow=driver.findElement(By.xpath("//table[@id='dataTable']/tbody/tr[2]"));
+		System.out.println(tablerow.getText());
+		
 		
 	}
 

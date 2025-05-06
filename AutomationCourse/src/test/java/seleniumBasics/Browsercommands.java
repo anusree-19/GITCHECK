@@ -1,4 +1,4 @@
-package SeleniumBasics;
+package seleniumBasics;
 
 public class Browsercommands extends Base {
 	
